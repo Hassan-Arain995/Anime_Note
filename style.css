@@ -64,3 +64,27 @@ button {
   color: #bbb;
   white-space: nowrap;
 }
+
+.anime-page {
+  padding: 15px;
+}
+
+.title-row,
+.rating-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#characterList {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.character-item {
+  padding: 6px 0;
+}
+
+.anime-page button {
+  margin-top: 8px;
+}
