@@ -35,15 +35,12 @@ function renderAnimeList(
     `;
 
     item.addEventListener(
-      "click",
-      () => {
-        alert(
-          anime.title +
-          "\n\n" +
-          anime.characters.join("\n")
-        );
-      }
-    );
+  "click",
+  () => {
+    location.href =
+      `anime.html?id=${anime.id}`;
+  }
+);
 
     animeListDiv.appendChild(item);
   });
