@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anime Notes</title>
+
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="top-bar">
+    <input
+      type="text"
+      id="searchInput"
+      placeholder="Search anime or character..."
+      autocomplete="off"
+    >
+
+    <button id="sortBtn" title="Sort">⇅</button>
+    <button id="addBtn" title="Add Anime">➕</button>
+    <button id="importBtn" title="Import">📥</button>
+    <button id="exportBtn" title="Export">📤</button>
+    <button id="trashBtn" title="Trash">🗑</button>
+  </header>
+
+  <main>
+    <div id="animeList"></div>
+  </main>
+
+  <input
+    type="file"
+    id="fileInput"
+    accept=".txt,.docx,.json"
+    hidden
+  >
+
+  <script src="db.js"></script>
+  <script src="search.js"></script>
+  <script src="sort.js"></script>
+  <script src="import.js"></script>
+  <script src="export.js"></script>
+  <script src="trash.js"></script>
+  <script src="app.js"></script>
+
+</body>
+</html>
